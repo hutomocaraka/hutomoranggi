@@ -29,9 +29,11 @@ public class Jadwal extends javax.swing.JPanel {
 
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable2 = new javax.swing.JTable();
-        jLabel1 = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
         jLabel2 = new javax.swing.JLabel();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
+        jLabel1 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jComboBox1 = new javax.swing.JComboBox<>();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jLabel3 = new javax.swing.JLabel();
@@ -53,34 +55,43 @@ public class Jadwal extends javax.swing.JPanel {
         setPreferredSize(new java.awt.Dimension(480, 550));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jTextField1.setText("Cari ...");
+        add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 80, 120, -1));
+
+        jLabel2.setText("Filter");
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 80, -1, -1));
+
         jLabel1.setFont(new java.awt.Font("AXIS Extra Bold", 0, 18)); // NOI18N
         jLabel1.setText("JADWAL");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 11, -1, -1));
 
-        jLabel2.setText("Tanggal");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(28, 74, -1, -1));
-        add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(84, 74, 175, -1));
+        jButton1.setText("Cari");
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 80, -1, -1));
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Hari", "Item 2", "Item 3", "Item 4" }));
+        add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 80, -1, -1));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "No", "Waktu", "Mata kuliah", "Dosen", "Materi"
+                "No", "Hari", "Jam", "Kode", "Matakuliah", "Kelas", "Ruang", "Semester"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 770, 90));
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-6, -6, 810, 550));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-6, -6, 810, 480));
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private com.toedter.calendar.JDateChooser jDateChooser1;
+    private javax.swing.JButton jButton1;
+    private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -88,5 +99,6 @@ public class Jadwal extends javax.swing.JPanel {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
     private javax.swing.JTable jTable2;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

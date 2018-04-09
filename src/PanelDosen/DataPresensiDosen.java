@@ -75,6 +75,11 @@ public class DataPresensiDosen extends javax.swing.JPanel {
         add(jRadioButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 220, -1, -1));
 
         jButton1.setText("Setuju");
+        jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton1MouseClicked(evt);
+            }
+        });
         add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 420, -1, -1));
 
         jButton2.setText("Batal");
@@ -128,6 +133,10 @@ public class DataPresensiDosen extends javax.swing.JPanel {
     private void jRadioButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton5ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jRadioButton5ActionPerformed
+
+    private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
+       
+    }//GEN-LAST:event_jButton1MouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -3,19 +3,23 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/C:/Users/naran/OneDrive/Documents/NetBeansProjects/PresensiOnline/src/Admin/DataBaruDosen.java</file>
             <file>file:/C:/Users/naran/OneDrive/Documents/NetBeansProjects/PresensiOnline/src/PanelAdmin/DataDosen.java</file>
+            <file>file:/C:/Users/naran/OneDrive/Documents/NetBeansProjects/PresensiOnline/src/Admin/AksesAdmin.java</file>
             <file>file:/C:/Users/naran/OneDrive/Documents/NetBeansProjects/PresensiOnline/src/PanelMahasiswa/RekapPresensi.java</file>
             <file>file:/C:/Users/naran/OneDrive/Documents/NetBeansProjects/PresensiOnline/src/PanelMahasiswa/JadwalMataKuliah.java</file>
+            <file>file:/C:/Users/naran/OneDrive/Documents/NetBeansProjects/PresensiOnline/src/Admin/DataBaruMahasiswa.java</file>
+            <file>file:/C:/Users/naran/OneDrive/Documents/NetBeansProjects/PresensiOnline/src/Admin/DataBaruJadwal.java</file>
+            <file>file:/C:/Users/naran/OneDrive/Documents/NetBeansProjects/PresensiOnline/src/PanelAdmin/Jadwal.java</file>
             <file>file:/C:/Users/naran/OneDrive/Documents/NetBeansProjects/PresensiOnline/src/AksesMahasiswa.java</file>
-            <file>file:/C:/Users/naran/OneDrive/Documents/NetBeansProjects/PresensiOnline/src/AksesAdmin.java</file>
             <file>file:/C:/Users/naran/OneDrive/Documents/NetBeansProjects/PresensiOnline/src/PanelDosen/RekapPresensi.java</file>
-            <file>file:/C:/Users/naran/OneDrive/Documents/NetBeansProjects/PresensiOnline/src/AksesDosen.java</file>
+            <file>file:/C:/Users/naran/OneDrive/Documents/NetBeansProjects/PresensiOnline/src/Dosen/AksesDosen.java</file>
             <file>file:/C:/Users/naran/OneDrive/Documents/NetBeansProjects/PresensiOnline/src/PanelDosen/DataPresensiDosen.java</file>
             <file>file:/C:/Users/naran/OneDrive/Documents/NetBeansProjects/PresensiOnline/src/PanelMahasiswa/DataPresensiMahasiswa.java</file>
             <file>file:/C:/Users/naran/OneDrive/Documents/NetBeansProjects/PresensiOnline/src/PanelAdmin/DataMahasiswa.java</file>
             <file>file:/C:/Users/naran/OneDrive/Documents/NetBeansProjects/PresensiOnline/src/PanelDosen/Jadwal.java</file>
             <file>file:/C:/Users/naran/OneDrive/Documents/NetBeansProjects/PresensiOnline/src/Login.java</file>
-            <file>file:/C:/Users/naran/OneDrive/Documents/NetBeansProjects/PresensiOnline/src/PanelAdmin/JadwalAdmin.java</file>
+            <file>file:/C:/Users/naran/OneDrive/Documents/NetBeansProjects/PresensiOnline/src/PanelAdmin/DataPresensiAdmin.java</file>
         </group>
     </open-files>
 </project-private>

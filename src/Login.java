@@ -1,3 +1,6 @@
+
+import Dosen.AksesDosen;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
@@ -60,7 +63,7 @@ public class Login extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
-        AksesDosen ad = new AksesDosen();
+        Admin.AksesAdmin ad = new Admin.AksesAdmin();
         ad.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jButton1MouseClicked

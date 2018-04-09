@@ -29,12 +29,18 @@ public class RekapPresensi extends javax.swing.JPanel {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
         jLabel4 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jRadioButton2 = new javax.swing.JRadioButton();
+        jButton1 = new javax.swing.JButton();
+        jComboBox2 = new javax.swing.JComboBox<>();
         jComboBox1 = new javax.swing.JComboBox<>();
+        jComboBox3 = new javax.swing.JComboBox<>();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jLabel3 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -43,41 +49,67 @@ public class RekapPresensi extends javax.swing.JPanel {
         jLabel1.setText("Rekap Presensi");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(329, 19, -1, -1));
 
-        jLabel2.setText("Tanggal");
+        jLabel2.setText("Pilih Rekapan");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 68, -1, -1));
-        add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(71, 68, -1, -1));
 
-        jLabel4.setText("Mata Kuliah");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(229, 71, -1, -1));
+        jLabel4.setText("Bulan");
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
+
+        jLabel5.setText("Tahun Ajaran");
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
+
+        jRadioButton1.setText("Per Bulan");
+        add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 60, -1, -1));
+
+        jRadioButton2.setText("Per Hari");
+        add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, -1, -1));
+
+        jButton1.setText("Tampilkan");
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 310, -1, -1));
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1718", "Item 2", "Item 3", "Item 4" }));
+        add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 100, -1, -1));
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "PBO 2", "Item 2", "Item 3", "Item 4" }));
-        add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(302, 68, 146, -1));
+        add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 100, 146, -1));
+
+        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Januari", "Item 2", "Item 3", "Item 4" }));
+        add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 140, -1, -1));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "No", "NIM", "Nama", "Dosen", "Materi", "1", "2"
+                "No", "NIP", "Nama", "1", "2"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 106, 760, 90));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 200, 760, 90));
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 550));
+
+        jLabel6.setText("Mata Kuliah");
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 100, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JComboBox<String> jComboBox1;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
+    private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JComboBox<String> jComboBox3;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
