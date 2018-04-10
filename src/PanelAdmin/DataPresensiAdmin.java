@@ -30,11 +30,17 @@ public class DataPresensiAdmin extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jLabel3 = new javax.swing.JLabel();
-        jDateChooser1 = new com.toedter.calendar.JDateChooser();
-        jComboBox1 = new javax.swing.JComboBox<>();
-        jComboBox2 = new javax.swing.JComboBox<>();
-        jComboBox3 = new javax.swing.JComboBox<>();
+        jTextField1 = new javax.swing.JTextField();
+        jRadioButton2 = new javax.swing.JRadioButton();
+        jRadioButton1 = new javax.swing.JRadioButton();
+        jRadioButton3 = new javax.swing.JRadioButton();
+        jRadioButton4 = new javax.swing.JRadioButton();
+        jButton2 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
@@ -47,45 +53,70 @@ public class DataPresensiAdmin extends javax.swing.JPanel {
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null},
-                {null, null, null, null, null, null}
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
             },
             new String [] {
-                "No", "Jam", "Matakuliah", "Dosen", "Ruang", "Kelas"
+                "No", "NIM", "Nama", "Program Studi", "Status"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, 720, 90));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, 720, 90));
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel3.setText("Matakuliah");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 200, -1, -1));
-        add(jDateChooser1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 200, -1, -1));
+        jLabel3.setText("Matakuliah :");
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 80, -1, -1));
 
-        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A", "Item 2", "Item 3", "Item 4" }));
-        add(jComboBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 200, -1, -1));
+        jTextField1.setText("Cari ...");
+        add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(569, 130, 120, -1));
 
-        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "PBO2", "Item 2", "Item 3", "Item 4" }));
-        add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 200, -1, -1));
+        jRadioButton2.setBackground(new java.awt.Color(255, 255, 255));
+        jRadioButton2.setText("M");
+        add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 310, -1, -1));
 
-        jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Budi", "Item 2", "Item 3", "Item 4" }));
-        add(jComboBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 200, 80, -1));
+        jRadioButton1.setBackground(new java.awt.Color(255, 255, 255));
+        jRadioButton1.setText("A");
+        add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 310, -1, -1));
+
+        jRadioButton3.setBackground(new java.awt.Color(255, 255, 255));
+        jRadioButton3.setText("I");
+        add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 310, -1, -1));
+
+        jRadioButton4.setBackground(new java.awt.Color(255, 255, 255));
+        jRadioButton4.setText("S");
+        add(jRadioButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 310, -1, -1));
+
+        jButton2.setText("Kembali");
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 430, -1, -1));
 
         jButton1.setText("Cari");
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 200, -1, -1));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 130, -1, -1));
 
-        jLabel5.setText("Dosen");
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 200, -1, -1));
+        jButton4.setText("Simpan");
+        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 430, -1, -1));
 
-        jLabel6.setText("Kelas");
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 200, -1, -1));
+        jButton5.setText("Ubah");
+        add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 430, -1, -1));
+
+        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        jLabel8.setText("Jam :");
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 80, -1, -1));
+
+        jLabel7.setText("Status");
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, -1, -1));
+
+        jLabel5.setText("Dosen :");
+        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 80, -1, -1));
+
+        jLabel6.setText("Kelas :");
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 80, -1, -1));
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        jLabel4.setText("Hari");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, -1, -1));
+        jLabel4.setText("Hari :");
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("AXIS Extra Bold", 0, 18)); // NOI18N
         jLabel2.setText("DATA PRESENSI");
@@ -99,18 +130,24 @@ public class DataPresensiAdmin extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JComboBox<String> jComboBox1;
-    private javax.swing.JComboBox<String> jComboBox2;
-    private javax.swing.JComboBox<String> jComboBox3;
-    private com.toedter.calendar.JDateChooser jDateChooser1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton4;
+    private javax.swing.JButton jButton5;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JRadioButton jRadioButton1;
+    private javax.swing.JRadioButton jRadioButton2;
+    private javax.swing.JRadioButton jRadioButton3;
+    private javax.swing.JRadioButton jRadioButton4;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
+    private javax.swing.JTextField jTextField1;
     // End of variables declaration//GEN-END:variables
 }

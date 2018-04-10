@@ -27,22 +27,27 @@ public class DataPresensiDosen extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel5 = new javax.swing.JLabel();
         jRadioButton3 = new javax.swing.JRadioButton();
         jRadioButton2 = new javax.swing.JRadioButton();
         jRadioButton4 = new javax.swing.JRadioButton();
         jRadioButton5 = new javax.swing.JRadioButton();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        jLabel7 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        jLabel9 = new javax.swing.JLabel();
+        jLabel10 = new javax.swing.JLabel();
+        jLabel11 = new javax.swing.JLabel();
+        jButton3 = new javax.swing.JButton();
+        jButton4 = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTextArea1 = new javax.swing.JTextArea();
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -53,10 +58,10 @@ public class DataPresensiDosen extends javax.swing.JPanel {
                 jRadioButton3ActionPerformed(evt);
             }
         });
-        add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 220, -1, -1));
+        add(jRadioButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 210, -1, -1));
 
         jRadioButton2.setText("A");
-        add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, -1, -1));
+        add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 210, -1, -1));
 
         jRadioButton4.setText("I");
         jRadioButton4.addActionListener(new java.awt.event.ActionListener() {
@@ -64,7 +69,7 @@ public class DataPresensiDosen extends javax.swing.JPanel {
                 jRadioButton4ActionPerformed(evt);
             }
         });
-        add(jRadioButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 220, -1, -1));
+        add(jRadioButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 210, -1, -1));
 
         jRadioButton5.setText("S");
         jRadioButton5.addActionListener(new java.awt.event.ActionListener() {
@@ -72,33 +77,51 @@ public class DataPresensiDosen extends javax.swing.JPanel {
                 jRadioButton5ActionPerformed(evt);
             }
         });
-        add(jRadioButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 220, -1, -1));
+        add(jRadioButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 210, -1, -1));
 
-        jButton1.setText("Setuju");
+        jButton1.setText("Simpan");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton1MouseClicked(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 420, -1, -1));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 430, -1, -1));
 
-        jButton2.setText("Batal");
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 420, -1, -1));
+        jLabel7.setText("Ruang :");
+        add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 70, -1, -1));
 
         jLabel3.setText("Materi");
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 300, -1, -1));
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 290, -1, -1));
 
         jLabel4.setText("Status");
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, -1, -1));
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 210, -1, -1));
 
         jLabel2.setText("Dosen :");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 70, -1, -1));
+
+        jLabel8.setText("Hari :");
+        add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 70, -1, -1));
+
+        jLabel9.setText("Jam :");
+        add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 70, -1, -1));
+
+        jLabel10.setText("Matakuliah :");
+        add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 70, -1, -1));
+
+        jLabel11.setText("Kelas :");
+        add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 70, -1, -1));
+
+        jButton3.setText("Ubah");
+        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 430, -1, -1));
+
+        jButton4.setText("Kembali");
+        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 430, -1, -1));
 
         jTextArea1.setColumns(20);
         jTextArea1.setRows(5);
         jScrollPane2.setViewportView(jTextArea1);
 
-        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 300, 390, -1));
+        add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, 390, -1));
 
         jLabel1.setFont(new java.awt.Font("AXIS Extra Bold", 0, 18)); // NOI18N
         jLabel1.setText("Data Presensi");
@@ -112,14 +135,12 @@ public class DataPresensiDosen extends javax.swing.JPanel {
                 {null, null, null, null, null}
             },
             new String [] {
-                "No", "NIM", "Nama", "Status", "Waktu"
+                "No", "NIM", "Nama", "Program Studi", "Status"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 60, 770, 90));
-        add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 480, 460));
-        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(-6, -6, 810, 490));
+        add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 770, 90));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
@@ -141,13 +162,18 @@ public class DataPresensiDosen extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JRadioButton jRadioButton3;
     private javax.swing.JRadioButton jRadioButton4;

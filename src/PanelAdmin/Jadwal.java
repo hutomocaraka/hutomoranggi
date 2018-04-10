@@ -33,6 +33,7 @@ public class Jadwal extends javax.swing.JPanel {
         jComboBox3 = new javax.swing.JComboBox<>();
         jTextField1 = new javax.swing.JTextField();
         jComboBox2 = new javax.swing.JComboBox<>();
+        jButton4 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
@@ -47,13 +48,13 @@ public class Jadwal extends javax.swing.JPanel {
         jTable1.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null}
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "No", "Hari", "Jam", "Kode", "Mata Kuliah", "Kelas", "Ruang"
+                "No", "Hari", "Jam", "Kode", "Mata Kuliah", "Dosen", "Kelas", "Ruang"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -72,11 +73,14 @@ public class Jadwal extends javax.swing.JPanel {
         jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Hari", "Item 2", "Item 3", "Item 4" }));
         add(jComboBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 90, -1, -1));
 
+        jButton4.setText("Isi Presensi");
+        add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 230, -1, -1));
+
         jButton2.setText("Cari");
         add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 90, -1, -1));
 
         jButton3.setText("Hapus");
-        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 230, -1, -1));
+        add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 230, -1, -1));
 
         jButton1.setText("Data Baru");
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -84,7 +88,7 @@ public class Jadwal extends javax.swing.JPanel {
                 jButton1MouseClicked(evt);
             }
         });
-        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 230, -1, -1));
+        add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 230, -1, -1));
 
         jLabel4.setText("Filter");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 90, -1, -1));
@@ -107,6 +111,7 @@ public class Jadwal extends javax.swing.JPanel {
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton4;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
