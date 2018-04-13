@@ -28,11 +28,8 @@ public class RekapPresensi extends javax.swing.JPanel {
     private void initComponents() {
 
         jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jRadioButton1 = new javax.swing.JRadioButton();
-        jRadioButton2 = new javax.swing.JRadioButton();
         jLabel6 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jComboBox2 = new javax.swing.JComboBox<>();
@@ -49,20 +46,11 @@ public class RekapPresensi extends javax.swing.JPanel {
         jLabel1.setText("Rekap Presensi");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(329, 19, -1, -1));
 
-        jLabel2.setText("Pilih Rekapan");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 68, -1, -1));
-
         jLabel4.setText("Bulan");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 100, -1, -1));
 
         jLabel5.setText("Tahun Ajaran");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, -1, -1));
-
-        jRadioButton1.setText("Per Bulan");
-        add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 60, -1, -1));
-
-        jRadioButton2.setText("Per Hari");
-        add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 60, -1, -1));
 
         jLabel6.setText("Mata Kuliah");
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 100, -1, -1));
@@ -81,13 +69,13 @@ public class RekapPresensi extends javax.swing.JPanel {
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null},
-                {null, null, null, null, null}
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null}
             },
             new String [] {
-                "No", "NIP", "Nama", "1", "2"
+                "No", "NIP", "Nama", "1", "2", "Persentase", "Keterangan"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
@@ -103,13 +91,10 @@ public class RekapPresensi extends javax.swing.JPanel {
     private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JComboBox<String> jComboBox3;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
-    private javax.swing.JRadioButton jRadioButton1;
-    private javax.swing.JRadioButton jRadioButton2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jTable1;
     // End of variables declaration//GEN-END:variables
