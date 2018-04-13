@@ -48,6 +48,7 @@ public class DataPresensiDosen extends javax.swing.JPanel {
         jLabel1 = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        jLabel6 = new javax.swing.JLabel();
 
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -123,8 +124,8 @@ public class DataPresensiDosen extends javax.swing.JPanel {
 
         add(jScrollPane2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 320, 390, -1));
 
-        jLabel1.setFont(new java.awt.Font("AXIS Extra Bold", 0, 18)); // NOI18N
-        jLabel1.setText("Data Presensi");
+        jLabel1.setFont(new java.awt.Font("Axis", 0, 18)); // NOI18N
+        jLabel1.setText("DATA PRESENSI");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 20, -1, -1));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -141,6 +142,10 @@ public class DataPresensiDosen extends javax.swing.JPanel {
         jScrollPane1.setViewportView(jTable1);
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 100, 770, 90));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/BG.png"))); // NOI18N
+        jLabel6.setPreferredSize(new java.awt.Dimension(800, 476));
+        add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 475));
     }// </editor-fold>//GEN-END:initComponents
 
     private void jRadioButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jRadioButton3ActionPerformed
@@ -171,6 +176,7 @@ public class DataPresensiDosen extends javax.swing.JPanel {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;

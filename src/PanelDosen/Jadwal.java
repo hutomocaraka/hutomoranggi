@@ -61,7 +61,7 @@ public class Jadwal extends javax.swing.JPanel {
         jLabel2.setText("Filter");
         add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 80, -1, -1));
 
-        jLabel1.setFont(new java.awt.Font("AXIS Extra Bold", 0, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Axis", 0, 18)); // NOI18N
         jLabel1.setText("JADWAL");
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 11, -1, -1));
 
@@ -85,7 +85,9 @@ public class Jadwal extends javax.swing.JPanel {
         jScrollPane1.setViewportView(jTable1);
 
         add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 770, 90));
-        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(-6, -6, 810, 480));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/BG.png"))); // NOI18N
+        add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 475));
     }// </editor-fold>//GEN-END:initComponents
 
 

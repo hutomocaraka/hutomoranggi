@@ -68,9 +68,9 @@ public class RekapPresensi extends javax.swing.JPanel {
         jLabel3.setText("Bulan");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 120, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("AXIS Extra Bold", 0, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Axis", 0, 18)); // NOI18N
         jLabel2.setText("REKAP PRESENSI");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 30, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 10, -1, -1));
 
         jLabel4.setText("Tahun Ajaran ");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 120, -1, -1));
@@ -83,6 +83,8 @@ public class RekapPresensi extends javax.swing.JPanel {
 
         jButton1.setText("Tampilkan");
         add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 120, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/BG.png"))); // NOI18N
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 475));
 
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "1718", "Item 2", "Item 3", "Item 4" }));

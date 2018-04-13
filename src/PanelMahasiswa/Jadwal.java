@@ -42,9 +42,9 @@ public class Jadwal extends javax.swing.JPanel {
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("AXIS Extra Bold", 0, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Axis", 0, 18)); // NOI18N
         jLabel1.setText("JADWAL");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(377, 28, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 10, -1, -1));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -81,7 +81,9 @@ public class Jadwal extends javax.swing.JPanel {
 
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Hari", "Item 3", "Item 4" }));
         add(jComboBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 120, -1, -1));
-        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 490));
+
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/BG.png"))); // NOI18N
+        add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 480));
     }// </editor-fold>//GEN-END:initComponents
 
 

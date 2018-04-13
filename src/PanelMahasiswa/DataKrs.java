@@ -5,6 +5,8 @@
  */
 package PanelMahasiswa;
 
+import java.awt.event.ActionListener;
+
 /**
  *
  * @author naran
@@ -16,6 +18,10 @@ public class DataKrs extends javax.swing.JPanel {
      */
     public DataKrs() {
         initComponents();
+    }
+    
+    public void addNextListener (ActionListener a){
+        jButton2.addActionListener(a);
     }
 
     /**
@@ -30,11 +36,11 @@ public class DataKrs extends javax.swing.JPanel {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
         jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
-        jButton2 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
 
@@ -59,19 +65,26 @@ public class DataKrs extends javax.swing.JPanel {
         jButton1.setText("Hapus");
         add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 260, -1, -1));
 
+        jButton2.setText("Data Baru");
+        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton2MouseClicked(evt);
+            }
+        });
+        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 260, -1, -1));
+
         jLabel4.setText("IPK                         :");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 120, -1, -1));
 
         jLabel3.setText("SKS  Tempuh             :");
         add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 120, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("AXIS Extra Bold", 0, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Axis", 0, 18)); // NOI18N
         jLabel2.setText("RENCANA STUDI");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 20, -1, -1));
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 480));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 10, -1, -1));
 
-        jButton2.setText("Data Baru");
-        add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 260, -1, -1));
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/BG.png"))); // NOI18N
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 480));
 
         jLabel5.setText("Tahun Akademik     :");
         add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 100, -1, -1));
@@ -79,6 +92,10 @@ public class DataKrs extends javax.swing.JPanel {
         jLabel6.setText("SKS Maksimal             :");
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 100, -1, -1));
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2MouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

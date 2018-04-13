@@ -1,6 +1,7 @@
 package Admin;
 
 
+import Login.Login;
 import java.awt.GridBagLayout;
 
 /*
@@ -59,10 +60,8 @@ public class AksesAdmin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jButton2 = new javax.swing.JButton();
         PanelAdmin = new javax.swing.JPanel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
@@ -73,22 +72,23 @@ public class AksesAdmin extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/logout.png"))); // NOI18N
+        jButton2.setContentAreaFilled(false);
+        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jButton2MouseClicked(evt);
+            }
+        });
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 420, 220, -1));
+
         PanelAdmin.setBackground(new java.awt.Color(255, 255, 255));
+        PanelAdmin.setOpaque(false);
         PanelAdmin.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        getContentPane().add(PanelAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 100, 800, 470));
+        getContentPane().add(PanelAdmin, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 40, 800, 475));
 
-        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/logout (1).png"))); // NOI18N
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 20, -1, -1));
-
-        jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel2.setText("Admin");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 60, -1, -1));
-
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/man.png"))); // NOI18N
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 20, 70, -1));
-
-        jButton1.setText("Data Dosen");
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/data dosen.png"))); // NOI18N
+        jButton1.setBorder(null);
+        jButton1.setContentAreaFilled(false);
         jButton1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton1MouseClicked(evt);
@@ -99,74 +99,64 @@ public class AksesAdmin extends javax.swing.JFrame {
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 50, -1, -1));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 190, 220, -1));
 
-        jButton3.setText("Data Mahasiswa");
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/data mahasiswa.png"))); // NOI18N
+        jButton3.setContentAreaFilled(false);
         jButton3.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton3MouseClicked(evt);
             }
         });
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 50, 120, -1));
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 230, 220, -1));
 
-        jButton4.setText("Jadwal");
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/jadwal.png"))); // NOI18N
+        jButton4.setContentAreaFilled(false);
         jButton4.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton4MouseClicked(evt);
             }
         });
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 50, -1, -1));
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 280, 220, 30));
 
-        jButton5.setText("Data Presensi");
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/data presensi.png"))); // NOI18N
+        jButton5.setContentAreaFilled(false);
         jButton5.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton5MouseClicked(evt);
             }
         });
-        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 50, -1, -1));
+        getContentPane().add(jButton5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 320, 220, 40));
 
-        jButton6.setText("Rekapan");
+        jButton6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/rekapan.png"))); // NOI18N
+        jButton6.setContentAreaFilled(false);
         jButton6.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jButton6MouseClicked(evt);
             }
         });
-        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 50, -1, -1));
+        getContentPane().add(jButton6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 370, 220, -1));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/HOME.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/aksesadmin.png"))); // NOI18N
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, -1, -1));
 
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
-       dataPresensi.setVisible(true);
-        jadwal.setVisible(false);
-       dataDosen.setVisible(false);
-       dataMahasiswa.setVisible(false);
-       rekapPresensi.setVisible(false);
-    }//GEN-LAST:event_jButton5MouseClicked
-
-    private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
-       jadwal.setVisible(true);
-       dataDosen.setVisible(false);
-       dataMahasiswa.setVisible(false);
-       dataPresensi.setVisible(false);
-       rekapPresensi.setVisible(false);
-    }//GEN-LAST:event_jButton4MouseClicked
-
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
-        dataMahasiswa.setVisible(true);
-        jadwal.setVisible(false);
-        dataDosen.setVisible(false);
-        dataPresensi.setVisible(false);
-        rekapPresensi.setVisible(false);
-    }//GEN-LAST:event_jButton3MouseClicked
 
     private void jButton1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton1MouseClicked
         dataDosen.setVisible(true);
@@ -176,14 +166,51 @@ public class AksesAdmin extends javax.swing.JFrame {
         rekapPresensi.setVisible(false);
     }//GEN-LAST:event_jButton1MouseClicked
 
+    private void jButton3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton3MouseClicked
+        dataMahasiswa.setVisible(true);
+        jadwal.setVisible(false);
+        dataDosen.setVisible(false);
+        dataPresensi.setVisible(false);
+        rekapPresensi.setVisible(false);
+    }//GEN-LAST:event_jButton3MouseClicked
+
+    private void jButton4MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton4MouseClicked
+        jadwal.setVisible(true);
+        dataDosen.setVisible(false);
+        dataMahasiswa.setVisible(false);
+        dataPresensi.setVisible(false);
+        rekapPresensi.setVisible(false);
+    }//GEN-LAST:event_jButton4MouseClicked
+
+    private void jButton5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton5MouseClicked
+        dataPresensi.setVisible(true);
+        jadwal.setVisible(false);
+        dataDosen.setVisible(false);
+        dataMahasiswa.setVisible(false);
+        rekapPresensi.setVisible(false);
+    }//GEN-LAST:event_jButton5MouseClicked
+
     private void jButton6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton6MouseClicked
-       rekapPresensi.setVisible(true);
-       dataDosen.setVisible(false);
-       dataMahasiswa.setVisible(false);
-       dataPresensi.setVisible(false);
-       jadwal.setVisible(false);
-       
+        rekapPresensi.setVisible(true);
+        dataDosen.setVisible(false);
+        dataMahasiswa.setVisible(false);
+        dataPresensi.setVisible(false);
+        jadwal.setVisible(false);
+
     }//GEN-LAST:event_jButton6MouseClicked
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void jButton2MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseClicked
+        new Login().setVisible(true);
+        dispose();
+    }//GEN-LAST:event_jButton2MouseClicked
 
     /**
      * @param args the command line arguments
@@ -223,13 +250,11 @@ public class AksesAdmin extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel PanelAdmin;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
     private javax.swing.JButton jButton6;
     private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
     // End of variables declaration//GEN-END:variables
 }

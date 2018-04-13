@@ -118,9 +118,11 @@ public class DataPresensiAdmin extends javax.swing.JPanel {
         jLabel4.setText("Hari :");
         add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 80, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("AXIS Extra Bold", 0, 18)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Axis", 0, 18)); // NOI18N
         jLabel2.setText("DATA PRESENSI");
-        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 20, -1, -1));
+        add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 10, -1, -1));
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/BG.png"))); // NOI18N
         add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 480));
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));

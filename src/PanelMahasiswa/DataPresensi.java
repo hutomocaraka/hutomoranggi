@@ -40,9 +40,9 @@ public class DataPresensi extends javax.swing.JPanel {
         setBackground(new java.awt.Color(255, 255, 255));
         setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel1.setFont(new java.awt.Font("AXIS Extra Bold", 0, 18)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Axis", 0, 18)); // NOI18N
         jLabel1.setText("DATA PRESENSI");
-        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 30, -1, -1));
+        add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 10, -1, -1));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -73,6 +73,8 @@ public class DataPresensi extends javax.swing.JPanel {
 
         jButton1.setText("Hadir");
         add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 240, -1, -1));
+
+        jLabel6.setIcon(new javax.swing.ImageIcon(getClass().getResource("/asset/BG.png"))); // NOI18N
         add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 480));
     }// </editor-fold>//GEN-END:initComponents
 
